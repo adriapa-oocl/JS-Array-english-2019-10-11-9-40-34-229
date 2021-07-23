@@ -47,7 +47,7 @@ var a = [5, 1, 8, 10, 4];
 console.log(a.sort((a,b) => b-a));
 
 // Program to find the most frequent element in the following array.
-var a = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+var a = [3, 'a', 2, 9, 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
 //TODO should output: 'a'
 let counter1 = 1, counter2 = 0, frequentLetter;
 for (let x=0; x<a.length; x++)
@@ -58,9 +58,9 @@ for (let x=0; x<a.length; x++)
          counter2++;
         if (counter1<counter2)
         {
-          counter1=counter2; 
-          frequentLetter = a[x];
+          counter1=counter2;
         }
+        frequentLetter = a[x];
     }
     counter2=0;
 }
